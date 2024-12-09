@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F5F5DC;
+}
+button{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    background:none;
+}
+h2{
+    font-size: 36px;
+    font-family: 'Playfair Display',sans-serif;
+}
+h3{
+    font-size: 28px;
+    font-family: 'Playfair Display',sans-serif;
+}
+p{
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+}
+header{
+    padding: 0 64px;
+    background-color: #8B4513;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+
+}
+.links-nav {
+    list-style-type: none;
+    display: flex;
+}
+.links-nav li{
+    margin-right: 2rem;
+}
+.links-nav li a{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    color: black;
+}
+.links-nav li a:hover{
+    background-color: #4CAF50;
+    color: #FFFFFF;
+}
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo-container img{
+    width: 60px;
+}
+
+.btn-reserva{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: 0.3s ease-in;
+}
+.btn-reserva:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* BANNER SECTION  */
+
+.banner{
+    width: 100%; 
+}
+.banner-img img{
+    width: 100%;
+}
+
+.banner-contenido{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+}
+.banner-contenido h1{
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 48px;
+}
+.banner-contenido .info p {
+    font-family:'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 25px;
+    color: #333333;
+
+}
+.btn-reserva-banner{
+    margin-top: 32px;
+    width: 30%;
+    padding: 1rem;
+    border: 1px solid #4CAF50;
+    transition: 0.3s ease;
+    color: #4CAF50;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn-reserva-banner:hover{
+    background-color: #4CAF50;
+    color: #FFFFFF;
+}
+
+/* seccion historia */
+
+.descubrir{
+    width: 100%;
+    padding: 112px 64px;
+    background-color: #A2CADF;
+
+}
+.descubrir .contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.contenido .contenido-info{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+ 
+}
+.info-titulo h2{
+    margin-bottom: 24px;
+}
+.info-titulo p{
+    font-family:'Lato', sans-serif;
+    line-height: 25px;
+    font-size: 1rem;
+}
+.info-atencion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.info-atencion .subtitulo{
+    font-family: 'Playfair Display',sans-serif;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+.info-atencion p{
+    line-height: 25px;
+    font-family:'Lato', sans-serif;
+}
+.descubrir-img{
+    width: 70%;
+}
+.descubrir-img img{
+    width: 100%;
+    object-fit: fill;
+}
+/* SECTIO CABAÑAS  */
+.cabañas{
+    padding: 112px 64px;
+    text-align: center;
+}
+.cabañas p {
+    text-align: left;
+    margin-top: 30px;
+}
+.lista-comodidades{
+    list-style: inside ;
+    text-align: left;
+    margin-top: 30px;
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    line-height: 30px;
+}
+.cabañas-contenido{
+    margin-top: 80px;
+}
+.cabanas-tarjetas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.tarjeta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    background-color: #A2CADF;
+    gap: 32px;
+}
+.tarjeta .header-img{
+    width: 100%;
+}
+.header-img img{
+    width: 100%;
+}
+
+.tarjeta .tarjeta-body p{
+    margin-top:16px;
+    text-align: center;
+}
+.tarjeta .anch-btn{
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: #333333;
+    transition: 0.3s ease;
+}
+.tarjeta .anch-btn:hover{
+    background-color: #4CAF50;
+    color: #FFFFFF;
+}
+
+/* SECCION COMO RESERVAR  */
+.como-reservar{
+    padding: 112px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #A2CADF;
+    gap: 80px;
+}
+.como-reservar .titulo{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.titulo .titulo-tag{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.titulo .titulo-contenido{
+    text-align: center;
+}
+.titulo-contenido h2{
+    padding: 10px;
+    margin-bottom: 12px;
+    
+}
+.titulo-contenido p{
+    margin-top: 12px;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.como-reservar-pasos{
+    width: 100%;
+}
+.como-reservar-pasos .fila{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 48px;
+}
+.como-reservar .white{
+    border: 1px solid #333333;
+    color: #333333;
+}
+.como-reservar .white:hover{
+    border: #4CAF50;
+    color: #FFFFFF;
+}
+.fila .columna{
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.fila .columna img{
+    width: 48px;
+}
+.fila .columna .columna-contenido{
+    text-align: center;
+}
+.columna .columna-contenido h3{
+    padding: 0 20px;
+    margin-bottom: 12px;
+}
+.columna .columna-contenido p{
+    margin-top: 12px;
+    font-size: 1rem;
+}
+
+/* LLAMADO A LA ACCION */
+.llamado-atencion{
+    padding: 64px 112px;
+}
+.llamado-atencion .contenido-llamado-atencion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenido-llamado-atencion .texto h2{
+    margin-bottom: 12px;
+}
+.contenido-llamado-atencion .texto p{
+    margin-top: 12px;
+}
+
+/* FOOTER  */
+footer{
+    padding: 80px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: #8B4513;
+    color: #333333;
+}
+.pie-de-pagina-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pie-de-pagina-contenido img{
+    width: 100px;
+}
+.pie-de-pagina-contenido a{
+    color: #333333;
+}
+.pie-de-pagina-creditos{
+    text-align: center;
+}
+.pie-de-pagina-creditos p{
+    margin-top: 32px;
+}
